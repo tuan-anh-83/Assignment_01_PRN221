@@ -1,0 +1,45 @@
+﻿<Window x:Class="SE160143_Ass1.BookMemberForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SE160143_Ass1"
+        mc:Ignorable="d"
+        Title="BookMemberForm" Height="450" Width="800">
+    <Grid Margin="-6,0,6,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <GroupBox Header="Member Info" Margin="14,17,0,217" HorizontalAlignment="Left" Width="581">
+            <Canvas>
+                <Label Content="MemberID" Canvas.Left="22" Canvas.Top="12" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <TextBox x:Name="txtMemberID" Canvas.Left="90" TextWrapping="Wrap" Canvas.Top="14" Width="154" HorizontalAlignment="Center" Height="22" VerticalAlignment="Top"/>
+                <Label Content="Password" Canvas.Left="22" Canvas.Top="45" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <TextBox x:Name="txtPassword" Canvas.Left="90" TextWrapping="Wrap" Canvas.Top="49" Width="154" Height="22" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.532,0.07"/>
+                <Label Content="Email" Canvas.Left="22" Canvas.Top="80" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <TextBox x:Name="txtEmail" Canvas.Left="90" TextWrapping="Wrap" Canvas.Top="82" Width="154" Height="22" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <Label Content="MemberRole" Canvas.Left="276" Canvas.Top="71" HorizontalAlignment="Left" VerticalAlignment="Top" Height="43"/>
+                <Label Content="FullName" Canvas.Left="276" Canvas.Top="35" HorizontalAlignment="Left" VerticalAlignment="Top" Height="27"/>
+                <TextBox x:Name="txtFullName" Canvas.Left="359" TextWrapping="Wrap" Canvas.Top="35" Width="154" Height="22" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Button x:Name="btnSearch" Content="Search By FullName" Height="25" Canvas.Left="239" Canvas.Top="132" Width="109" HorizontalAlignment="Left" VerticalAlignment="Center" Click="btnSearch_Click"/>
+                <TextBox x:Name="txtSearch" Canvas.Left="359" TextWrapping="Wrap" Canvas.Top="132" Width="154" Height="22" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <TextBox x:Name="txtMemberRole" Canvas.Left="359" TextWrapping="Wrap" Canvas.Top="71" Width="154" Height="22" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            </Canvas>
+        </GroupBox>
+        <GroupBox Header="Member List" Margin="10,241,10,10">
+            <DataGrid x:Name="dgMemberList" d:ItemsSource="{d:SampleData ItemCount=5}" Height="150"/>
+        </GroupBox>
+        <GroupBox HorizontalAlignment="Left" Height="207" Header="" Margin="609,10,0,0" VerticalAlignment="Top" Width="171">
+            <Canvas>
+                <Button x:Name="btnAdd" Content="Add" HorizontalAlignment="Left" Height="35" VerticalAlignment="Center" Width="105" Canvas.Left="31" Click="btnAdd_Click"/>
+                <Button x:Name="btnUpdate" Content="Update" Height="35" Width="105" HorizontalAlignment="Left" Canvas.Left="31" VerticalAlignment="Center" Canvas.Top="40" Click="btnUpdate_Click"/>
+                <Button x:Name="btnDelete" Content="Delete" Height="35" Width="105" HorizontalAlignment="Left" Canvas.Left="31" VerticalAlignment="Center" Canvas.Top="80" Click="btnDelete_Click"/>
+                <Button x:Name="btnClose" Content="Close" Height="35" Width="105" HorizontalAlignment="Left" Canvas.Left="30" VerticalAlignment="Center" Canvas.Top="139" Click="btnClose_Click"/>
+
+            </Canvas>
+
+        </GroupBox>
+
+    </Grid>
+
+</Window>
