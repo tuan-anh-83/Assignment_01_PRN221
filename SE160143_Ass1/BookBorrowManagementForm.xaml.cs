@@ -96,8 +96,7 @@ namespace SE160143_Ass1
             dtReturnDay.SelectedDate = selectedBook.ReturnDate;
             txtMemberID.Text = selectedBook.MemberId;
             
-
-            //txtBookID.IsReadOnly = true;
+            
         }
 
         private void btnUpdate_Click(object sender, RoutedEventArgs e)
