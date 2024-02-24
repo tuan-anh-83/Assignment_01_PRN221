@@ -32,10 +32,11 @@ namespace SE160143_Ass1
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
+            string password = txtPassword.Password;
             try
             {
                 BookManagementMember account = accountService.GetBookById(txtUsername.Text.Trim());
-                if (account != null && txtPassword.Text.Trim().Equals(account.Password))
+                if (account != null && password.Trim().Equals(account.Password))
                 {
                     switch (account.MemberRole)
                     {
