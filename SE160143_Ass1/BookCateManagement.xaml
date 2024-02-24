@@ -20,6 +20,7 @@
                 <TextBox x:Name="txtDescription" Canvas.Left="113" TextWrapping="Wrap" Canvas.Top="80" Width="154" Height="22" HorizontalAlignment="Left" VerticalAlignment="Center"/>
                 <Button x:Name="btnSearch" Content="Search By CategoryID" Height="26" Canvas.Left="238" Canvas.Top="126" Width="139" Click="btnSearch_Click" HorizontalAlignment="Left" VerticalAlignment="Center"/>
                 <TextBox x:Name="txtSearch" Canvas.Left="394" TextWrapping="Wrap" Canvas.Top="128" Width="154" Height="22" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Button x:Name="btnBack" Content="Back" Height="26" Canvas.Left="22" Canvas.Top="126" Width="68" Click="btnBack_Click" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             </Canvas>
         </GroupBox>
         <GroupBox Header="BookCate List" Margin="10,241,16,16">

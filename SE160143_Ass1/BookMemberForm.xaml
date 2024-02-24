@@ -24,6 +24,7 @@
                 <Button x:Name="btnSearch" Content="Search By FullName" Height="25" Canvas.Left="239" Canvas.Top="132" Width="109" HorizontalAlignment="Left" VerticalAlignment="Center" Click="btnSearch_Click"/>
                 <TextBox x:Name="txtSearch" Canvas.Left="359" TextWrapping="Wrap" Canvas.Top="132" Width="154" Height="22" HorizontalAlignment="Center" VerticalAlignment="Top"/>
                 <TextBox x:Name="txtMemberRole" Canvas.Left="359" TextWrapping="Wrap" Canvas.Top="71" Width="154" Height="22" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <Button x:Name="btnBack" Content="Back" Height="26" Canvas.Left="41" Canvas.Top="132" Width="66" Click="btnBack_Click" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             </Canvas>
         </GroupBox>
         <GroupBox Header="Member List" Margin="10,241,10,10">

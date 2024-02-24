@@ -156,5 +156,12 @@ namespace SE160143_Ass1
             dgBookCate.ItemsSource = books;
 
         }
+
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            MenuForm book = new MenuForm();
+            book.Show();
+            this.Hide();
+        }
     }
 }
